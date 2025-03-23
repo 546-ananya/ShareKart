@@ -18,7 +18,7 @@ function Cart() {
   };
 
   const handleCheckout = () => {
-    toast.success("Checkout successful!", {
+    toast.success("Payment successful!", {
       description: "Thank you for your purchase.",
       action: {
         label: "View Orders",
@@ -141,7 +141,7 @@ function Cart() {
               </CardContent>
               <CardFooter>
                 <Button className="w-full bg-green-500 hover:bg-green-400 text-white shadow-md" onClick={handleCheckout}>
-                  Checkout
+                  Payment
                 </Button>
               </CardFooter>
             </Card>

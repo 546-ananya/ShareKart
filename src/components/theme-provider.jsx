@@ -17,6 +17,7 @@ export const ThemeProvider = ({ defaultTheme, storageKey, children }) => {
   }, [defaultTheme, storageKey])
 
   useEffect(() => {
+    console.log("current theme:",theme);
     localStorage.setItem(storageKey, theme)
     if (theme === "system") {
       const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches
